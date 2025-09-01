@@ -3,9 +3,7 @@ info:
   title: "XSS test"
   version: "1.0.0"
   description: |
-    3) Object Tag
-description: |
-  <meta http-equiv="refresh" content="0;url=https://bugcrowd.com">
+    <meta http-equiv="refresh" content="0;url=https://bugcrowd.com">
 paths:
   /x:
     get:
