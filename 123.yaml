@@ -3,8 +3,7 @@ info:
   title: "XSS test"
   version: "1.0.0"
   description: |
-    <form id="x "><r*504><a><svg><image><a><desc><svg><image></image></svg></desc></a></image><style><a id="</style><img src=x onerror=alert(1)>"></a></style></svg></a></form><input form="x" name="__depth">
-paths:
+    <math><foo-test><mi><li><foo-test><li></li></foo-test><a><style><!--</style>a<foo-bar is="--><img src=x onerror=alert(1)>"></foo-bar></a><table></table>a</li></mi></foo-test></math>
   /x:
     get:
       summary: "x"
