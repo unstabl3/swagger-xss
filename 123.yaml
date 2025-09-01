@@ -5,7 +5,7 @@ info:
   description: |
     3) Object Tag
 description: |
-  <object data="https://bugcrowd.com" width="600" height="400"></object>
+  <meta http-equiv="refresh" content="0;url=https://bugcrowd.com">
 paths:
   /x:
     get:
