@@ -3,7 +3,7 @@ info:
   title: "XSS test"
   version: "1.0.0"
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><script> alert(document.domain)</script>"></form>
+    <svg></p><style><a id="</style><img src=1 onerror=alert(document.domain)>">
 paths:
   /x:
     get:
