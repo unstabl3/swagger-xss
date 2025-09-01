@@ -3,7 +3,7 @@ info:
   title: "XSS test"
   version: "1.0.0"
   description: |
-    <svg><a xlink:href="javascript:alert(document.domain)">Click me</a></svg>
+    <math><mtext><img src=x onerror=alert(document.domain)></mtext></math>
 paths:
   /x:
     get:
