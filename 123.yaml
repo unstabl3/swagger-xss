@@ -3,7 +3,7 @@ info:
   title: "XSS test"
   version: "1.0.0"
   description: |
-    <iframe src=javascript:alert(document.domain)>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><script> alert(document.domain)</script>"></form>
 paths:
   /x:
     get:
