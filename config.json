@@ -1,0 +1,9 @@
+{
+    "url": "https://raw.githubusercontent.com/unstabl3/swagger-xss/main/123.yaml",
+    "urls": [
+        {
+            "url": "https://raw.githubusercontent.com/unstabl3/swagger-xss/main/123.yaml",
+            "name": "XSS payload"
+        }
+    ]
+}
